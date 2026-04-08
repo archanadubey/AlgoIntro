@@ -57,6 +57,23 @@ public class BasicJavaCoding {
         return '_';
 
     }
+    // Remove Duplicate from String.
+
+    public static String removeDuplicate(String str){
+        System.out.println("Given String:"+str);
+        String result = "";
+        for(int i = 0; i < str.length(); i++){
+            for(int j = 1; j < str.length(); j++) {
+                if (str.charAt(i) != str.charAt(j)) {
+                    result += str.charAt(i);
+
+                }
+            }
+
+        }
+        return result;
+
+    }
 
     public static void main(String[] args) {
 
@@ -71,6 +88,10 @@ public class BasicJavaCoding {
         String firstUnique = "apple";
         char result = nonReapeating(firstUnique);
         System.out.println("First Non Repeating Char: "+result);
+
+        String removeDup = "abebcdae";
+        String res = removeDuplicate(removeDup);
+        System.out.println("Removed Duplicate:"+ res);
 
     }
 }

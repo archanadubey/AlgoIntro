@@ -5,17 +5,17 @@ public class ControlStatements {
     // take number from user and print its negative or positive
     public static void main(String[] args) {
 
-//        Scanner sc = new Scanner(System.in);
-//
-//        System.out.println("Enter the Number to Check:  ");
-//
-//        int number = sc.nextInt();
-//
-//        if( number >= 1 ){
-//            System.out.println("Number is positive: "+ number);
-//        }else
-//            System.out.println("Number is negative: "+ number);
-//
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the Number to Check:  ");
+
+        int number = sc.nextInt();
+
+        if( number >= 1 ){
+            System.out.println("Number is positive: "+ number);
+        }else
+            System.out.println("Number is negative: "+ number);
+
         Scanner sca = new Scanner(System.in);
         System.out.println("Enter the Number to Check:  ");
         int weekNumber = sca.nextInt();
